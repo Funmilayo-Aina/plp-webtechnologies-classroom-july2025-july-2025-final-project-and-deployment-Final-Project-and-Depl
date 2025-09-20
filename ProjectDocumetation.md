@@ -54,8 +54,42 @@ downloads/ → Guides and PDFs for users
 
 
 ## 🌍 Deployment
-- Hosted on Vercel  
-- Live URL: 👉 [your-link-here](https://)  
+ This project is deployed on Vercel.
+🔗 Live URL: https://Fhamadel-AI.vercel.app
+
+## 🔧 Tech Stack
+
+HTML5 → semantic structure
+
+CSS3 → responsive design + animations
+
+JavaScript (Vanilla) → interactivity + validation
+
+Vercel → hosting & deployment
+
+## ✨ Future Enhancements
+
+📦 Full ecommerce functionality (cart, checkout)
+
+📊 Analytics dashboard for farmers
+
+📱 Mobile-first PWA experience
+
+🔐 Authentication for users
 
 ## ✨ Credits
 Created by **Funmilayo Aina** during **PLP Power Learn Program – July 2025 Cohort**
+
+## 🌍 Deployment
+- Hosted on GitHub Pages / Netlify / Vercel  
+- Live URL: 👉 [your-link-here](https://)  
+
+## ✨ Credits
+Created by FhamaDeli team – 2025
+
+🌐 Deployment
+
+This project is deployed on Vercel.
+🔗 Live URL: https://farmer-platform.vercel.app
+
+
