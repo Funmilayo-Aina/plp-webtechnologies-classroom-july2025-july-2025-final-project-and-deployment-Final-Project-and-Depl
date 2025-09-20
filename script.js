@@ -1,5 +1,5 @@
 /* js/script.js
-   Modular interactivity for FhamaDeli
+   Modular interactivity for FhamaDel-AI
    - Theme toggle (with localStorage persistence)
    - Animations: bounce, spinner, color box
    - Small reusable functions with parameters and returns
@@ -36,7 +36,7 @@
   });
 })();
 
-/* ---------- SIMPLE REUSABLE FUNCTIONS (scope, params, return) ---------- */
+/* ---------- REUSABLE FUNCTIONS (scope, params, return) ---------- */
 
 // calculate delivery cost (demonstrates parameters and return)
 function calculateDeliveryCost(distanceKm, ratePerKm = 2) {
@@ -45,6 +45,7 @@ function calculateDeliveryCost(distanceKm, ratePerKm = 2) {
 }
 
 // reusable triggerAnimation: adds class then removes after animationend
+
 function triggerAnimation(el, className) {
   if (!el) return false;
   el.classList.add(className);
@@ -168,4 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-}); // DOMContentLoaded end
+}); 
+/* ---------- END OF FILE ---------- */
+

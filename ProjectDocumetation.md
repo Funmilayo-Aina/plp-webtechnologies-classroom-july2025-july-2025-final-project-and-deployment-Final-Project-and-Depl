@@ -67,6 +67,16 @@ JavaScript (Vanilla) → interactivity + validation
 
 Vercel → hosting & deployment
 
+## 🎨 Design & Color Theme
+
+Primary: #2ecc71 (green for agriculture)
+
+Accent: #f1c40f (gold/yellow, matches your bouncing ball)
+
+Secondary: #3498db (blue, highlights)
+
+Dark mode: Background #2c3e50, Text #ecf0f1
+
 ## ✨ Future Enhancements
 
 📦 Full ecommerce functionality (cart, checkout)
