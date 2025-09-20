@@ -1,4 +1,4 @@
-/* style.css - FhamaDeli (advanced) */
+/* style.css*/
 
 /* ----------- Base & Colors ------------ */
 :root{
@@ -12,7 +12,6 @@
   --bg: #a5bea8;
 }
 
-/* Reset & base */
 * { box-sizing: border-box; }
 html,body { height:100%; }
 body {
@@ -81,7 +80,8 @@ body {
   transform: translateX(4px);
 }
 
-/* nav controls & social */
+/* nav controls & social media platforms*/
+
 .nav-controls { margin-top:auto; width:100%; }
 .nav-controls button {
   width:100%;
@@ -102,6 +102,7 @@ body {
 .social a { color:#b28b92; text-decoration:none; font-size:0.9rem; }
 
 /* --------- Main content area --------- */
+
 .content{
   flex:1;
   padding:2rem;
@@ -109,6 +110,7 @@ body {
 }
 
 /* Hero */
+
 .hero { text-align:center; margin-bottom:1.5rem; }
 .hero h1{ margin:0; color:var(--green-dark); font-size:2rem; }
 .hero h3{ margin:0.4rem 0 1rem 0; color: #2f5b3b; }
@@ -116,6 +118,7 @@ body {
 .hero-img{ width:100%; max-width:760px; height:auto; border-radius:12px; display:block; margin:1rem auto; box-shadow:0 8px 20px rgba(0,0,0,0.15); }
 
 /* Cards & layout helpers */
+
 .FhamaDeli-card, .FhamaDeli {
   background: var(--panel);
   padding:1.25rem;
@@ -195,7 +198,7 @@ body.dark-mode {
   background-color:#0f1210; background-image:none; color:#dbeadf;
 }
 body.dark-mode .sidebar { background:#0b2a14; color:#dfe8e2; }
-body.dark-mode .brand h2 { color: #f1c40f; }
+body.dark-mode .brand h2 { color: #6cc84d; }
 body.dark-mode .main-nav a { color:#e9efe7; }
 body.dark-mode .FhamaDeli-card, body.dark-mode .FhamaDeli {
   background:#16321f; color:#e6efe7;
@@ -215,7 +218,7 @@ body.dark-mode table, body.dark-mode th, body.dark-mode td {
 }
 
 /* =====================
-   📚 Resources Page
+   Resources Page
    ===================== */
 .resources-intro {
   text-align: center;

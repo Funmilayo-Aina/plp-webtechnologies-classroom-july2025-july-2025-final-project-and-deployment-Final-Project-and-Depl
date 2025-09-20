@@ -71,11 +71,11 @@ Vercel → hosting & deployment
 
 Primary: #2ecc71 (green for agriculture)
 
-Accent: #f1c40f (gold/yellow, matches your bouncing ball)
+Accent: #f1c40f (gold/yellow, matches bouncing ball)
 
 Secondary: #3498db (blue, highlights)
 
-Dark mode: Background #2c3e50, Text #ecf0f1
+Dark mode: Background #2c3e50, Text #59a851ff
 
 ## ✨ Future Enhancements
 
@@ -87,7 +87,6 @@ Dark mode: Background #2c3e50, Text #ecf0f1
 
 🔐 Authentication for users
 
-##### ✨ Credits
 Created by **Funmilayo Aina** during **PLP Power Learn Program – July 2025 Cohort**
 
 
