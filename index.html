@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FhamaDeli — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="FhamaDeli — InsightByte Technologies (IBT) Agrotech MVP." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/Fhama Logo3.png" alt="FhamaDeli logo" class="logo">
+      <h2>FhamaDeli</h2>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-controls">
+      <button id="toggle-theme" aria-pressed="false">🌙 Dark Mode</button>
+    </div>
+
+    <div class="social">
+      <p>Follow us</p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="hero">
+      <h1>Welcome to FhamaDeli</h1>
+      <h3>Your one-stop solution for Agrotech needs.</h3>
+      <p class="lead">
+        FhamaDeli is an MVP product produced by InsightByte Technologies. We connect farmers with consumers,
+        streamline the supply chain, and promote sustainable agricultural practices.
+      </p>
+      <img src="images/Splashingwaterfarm.jpg" alt="water splashing on a farm" class="hero-img">
+    </header>
+
+    <section class="summary FhamaDeli-card">
+      <h2>Agrotech Solutions</h2>
+      <p>Explore farming, logistics, payments (Paystack, Flutterwave, Bank), and monitoring tools for fish farmers.</p>
+
+      <div class="grid two-col">
+        <div>
+          <h3>Payments & Networking</h3>
+          <div class="form-row">
+            <label for="paymentSelect">Payment Platform</label>
+            <select id="paymentSelect">
+              <option value="">--Select--</option>
+              <option value="Paystack">Paystack</option>
+              <option value="Flutterwave">Flutterwave</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+              <option value="Mobile Money">Mobile Money</option>
+            </select>
+            <p id="paymentMessage" class="muted small"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="deliverySelect">Delivery Method</label>
+            <select id="deliverySelect">
+              <option value="">--Select--</option>
+              <option value="Standard">Standard Delivery</option>
+              <option value="Express">Express Delivery</option>
+              <option value="Same Day">Same Day Delivery</option>
+            </select>
+            <p id="deliveryMessage" class="muted small"></p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Logistics Monitor</h3>
+          <p>Orders processed today: <span id="orderCount">0</span></p>
+          <div class="controls">
+            <button id="addOrder">➕ Add Order</button>
+            <button id="resetOrders">Reset</button>
+          </div>
+
+          <div class="animation-showcase">
+            <div id="ball" class="ball" title="Bouncing ball"></div>
+            <div id="spinner" class="spinner" title="Spinner" aria-hidden="true"></div>
+            <div id="box" class="animated-box" title="Animated box"></div>
+          </div>
+          <div class="controls">
+            <button id="bounceBtn">Bounce the Ball</button>
+            <button id="spinBtn">Start/Stop Spinner</button>
+            <button id="colorBtn">Toggle Color Box</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources">
+      <h2>Resources</h2>
+      <table>
+        <thead>
+          <tr><th>Resource Name</th><th>Description</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Software Dev Tools</td><td>Guides & docs</td><td><a href="#">Available Soon</a></td></tr>
+          <tr><td>API Development</td><td>Docs for devs</td><td><a href="#">Check back soon</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 InsightByte Technologies Ltd. All rights reserved.</p>
+      <p>Contact: +2348060824515 / +27630411393 • insightbytetechnologies@gmail.com</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

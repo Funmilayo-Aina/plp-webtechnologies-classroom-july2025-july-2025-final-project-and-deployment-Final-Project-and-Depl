@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FhamaDeli — Contact</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="images/Fhama Logo3.png" alt="FhamaDeli logo" class="logo">
+      <h2>FhamaDeli</h2>
+    </div>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-controls">
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header>
+      <h1>Contact Us</h1>
+      <p>We will get back to you as soon as possible.</p>
+    </header>
+
+    <section>
+      <form id="contactForm" class="contact-form" novalidate>
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+        <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+        <select id="service" required>
+          <option value="">Select a Service</option>
+          <option value="consultation">Consultation</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+        </select>
+
+        <select id="country" required>
+          <option value="">Select Your Country</option>
+          <option>USA</option>
+          <option>Nigeria</option>
+          <option>South Africa</option>
+          <option>Kenya</option>
+          <option>Ghana</option>
+          <option>Australia</option>
+          <option>Canada</option>
+          <option>UK</option>
+          <option>India</option>
+          <option>Other</option>
+        </select>
+
+        <textarea id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="formFeedback" class="muted"></p>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 InsightByte Technologies Ltd.</p>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

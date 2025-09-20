@@ -1,0 +1,276 @@
+/* style.css - FhamaDeli (advanced) */
+
+/* ----------- Base & Colors ------------ */
+:root{
+  --green-dark: #08471d;
+  --green: #076b1b;
+  --accent: #28a745;
+  --accent-2: #2ecc71;
+  --gold: #f1c40f;
+  --muted: #96aa98;
+  --panel: rgba(174,201,183,0.95);
+  --bg: #a5bea8;
+}
+
+/* Reset & base */
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body {
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--bg);
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #1f2f1b;
+  line-height:1.5;
+  display:flex;
+  min-height:100vh;
+}
+
+/* --------- Sidebar (left nav) --------- */
+.sidebar{
+  width: 260px;
+  background: var(--green-dark);
+  color: white;
+  padding: 1.2rem;
+  display:flex;
+  flex-direction:column;
+  gap:1rem;
+  align-items:flex-start;
+  position:sticky;
+  top:0;
+  height:100vh;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:0.8rem;
+}
+.brand .logo {
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  border-radius:8px;
+  background:white;
+  padding:3px;
+}
+
+.brand h2 { margin:0; font-size:1.25rem; color:var(--gold); }
+
+/* Nav */
+.main-nav ul {
+  list-style:none; padding:0; margin:0; width:100%;
+}
+.main-nav li { margin:0.35rem 0; }
+.main-nav a {
+  color: #fff;
+  text-decoration:none;
+  display:block;
+  padding:0.6rem 0.55rem;
+  border-radius:6px;
+  font-size:1.1rem; /* enlarged font */
+  font-weight:600;
+  transition: background 0.25s, color 0.25s, transform 0.12s;
+}
+.main-nav a:hover,
+.main-nav a.active {
+  background: var(--accent);
+  color:#fff;
+  transform: translateX(4px);
+}
+
+/* nav controls & social */
+.nav-controls { margin-top:auto; width:100%; }
+.nav-controls button {
+  width:100%;
+  padding:0.6rem;
+  border-radius:6px;
+  border:none;
+  background:var(--gold);
+  color:var(--green-dark);
+  font-weight:700;
+  cursor:pointer;
+  transition: transform .15s ease;
+}
+.nav-controls button:hover { transform:translateY(-2px); }
+
+.social { margin-top:0.6rem; width:100%; }
+.social p { margin:0 0 0.5rem 0; color:#dfe8e2; }
+.social ul { display:flex; gap:0.6rem; padding:0; list-style:none; }
+.social a { color:#b28b92; text-decoration:none; font-size:0.9rem; }
+
+/* --------- Main content area --------- */
+.content{
+  flex:1;
+  padding:2rem;
+  overflow:auto;
+}
+
+/* Hero */
+.hero { text-align:center; margin-bottom:1.5rem; }
+.hero h1{ margin:0; color:var(--green-dark); font-size:2rem; }
+.hero h3{ margin:0.4rem 0 1rem 0; color: #2f5b3b; }
+.lead{ max-width:900px; margin:0.6rem auto 1rem; color:#253a2b; }
+.hero-img{ width:100%; max-width:760px; height:auto; border-radius:12px; display:block; margin:1rem auto; box-shadow:0 8px 20px rgba(0,0,0,0.15); }
+
+/* Cards & layout helpers */
+.FhamaDeli-card, .FhamaDeli {
+  background: var(--panel);
+  padding:1.25rem;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  color: #fff;
+  margin-bottom:1rem;
+}
+.grid.two-col{ display:grid; grid-template-columns: repeat(2,1fr); gap:1.2rem; align-items:start; }
+
+/* forms inside card */
+.form-row { margin:0.6rem 0; display:flex; flex-direction:column; align-items:flex-start; }
+.form-row label{ font-weight:600; color:#093215; margin-bottom:6px; }
+.form-row select { width:100%; padding:0.5rem; border-radius:6px; border:1px solid #d0e0cf; }
+
+/* Controls */
+.controls { display:flex; gap:0.6rem; margin-top:0.6rem; }
+button { background:var(--accent); color:#fff; border:none; padding:0.6rem 0.9rem; border-radius:8px; cursor:pointer; font-weight:700; }
+button:hover { background:#1e7e34; transform:translateY(-2px); }
+
+/* Orders counter */
+#orderCount{ font-weight:800; color:var(--gold); font-size:1.1rem; }
+
+/* Table */
+table { width:100%; border-collapse:collapse; margin-top:1rem; background:rgba(255,255,255,0.9); border-radius:8px; overflow:hidden; }
+th { background:var(--green-dark); color:white; padding:10px; text-transform:uppercase; font-size:0.9rem; }
+td { padding:10px; border-bottom:1px solid #eee; color:#333; }
+
+/* Footer */
+.site-footer { margin-top:2rem; color:#12311f; font-size:0.95rem; }
+
+/* ---------------- Animations & interactive elements ---------------- */
+.animation-showcase { display:flex; align-items:center; gap:1rem; margin-top:1rem; }
+
+/* Ball */
+.ball {
+  width:60px; height:60px; border-radius:50%;
+  background-color: var(--gold);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  margin:0 auto;
+}
+.bouncing { animation: bounce 1.6s ease-in-out infinite; }
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-60px); }
+}
+
+/* Spinner */
+.spinner {
+  width:90px; height:90px; border-radius:50%;
+  border:10px solid var(--accent);
+  border-top: 10px solid var(--gold);
+  display:none; /* hidden until toggled */
+}
+.spinning { display:block; animation: spin 1.4s linear infinite, grow-shrink 2.6s ease-in-out infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes grow-shrink { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+
+/* Animated box */
+.animated-box { width:110px; height:110px; background:var(--accent-2); border-radius:12px; }
+.color-change { animation: color-change 1.2s ease-in-out infinite; }
+@keyframes color-change { 0% { background:var(--accent-2); } 50% { background:var(--gold); } 100% { background:var(--accent-2); } }
+
+/* one-time shake */
+.shake { animation: shake 0.5s ease; }
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-8px);} 75% { transform: translateX(8px);} }
+
+/* Focus & accessibility */
+a:focus, button:focus, select:focus, input:focus, textarea:focus { outline:3px solid rgba(40,167,69,0.22); outline-offset:2px; }
+
+/* Muted text */
+.muted { color:#526a56; }
+.small { font-size:0.85rem; }
+
+/* --------- Dark mode overrides (toggle) --------- */
+body.dark-mode {
+  background-color:#0f1210; background-image:none; color:#dbeadf;
+}
+body.dark-mode .sidebar { background:#0b2a14; color:#dfe8e2; }
+body.dark-mode .brand h2 { color: #f1c40f; }
+body.dark-mode .main-nav a { color:#e9efe7; }
+body.dark-mode .FhamaDeli-card, body.dark-mode .FhamaDeli {
+  background:#16321f; color:#e6efe7;
+}
+body.dark-mode .site-footer { color:#aebdb3; }
+body.dark-mode table, body.dark-mode th, body.dark-mode td {
+  background:#122117; color:#d6ded3; border-color:#22332a;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 900px) {
+  .sidebar{ position:relative; width:100%; height:auto; display:flex; flex-direction:row; align-items:center; gap:1rem; padding:0.6rem; }
+  .sidebar .brand { display:flex; align-items:center; }
+  .main-nav ul { display:flex; gap:0.6rem; overflow:auto; }
+  .content { padding:1rem; }
+  .grid.two-col { grid-template-columns: 1fr; }
+}
+
+/* =====================
+   📚 Resources Page
+   ===================== */
+.resources-intro {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(8, 71, 29, 0.9);
+  color: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.resource-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+.resource-cards .card {
+  flex: 1 1 300px;
+  background: #a5bea8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.resource-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.resource-cards h2 {
+  margin-bottom: 15px;
+  color: #08471d;
+}
+
+.resource-cards a {
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resource-cards a:hover {
+  text-decoration: underline;
+}
+
+.resource-cards ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-cards ul li {
+  margin: 5px 0;
+}
+/* End of style.css */
