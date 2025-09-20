@@ -54,9 +54,8 @@ downloads/ → Guides and PDFs for users
 
 
 ## 🌍 Deployment
- This project is deployed on Vercel.
-🔗 Live URL: https://Fhamadel-AI.vercel.app
-
+ This project is hosted on GitHub Pages.
+🔗 Live URL: https://funmilayo-aina.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/index.html
 ## 🔧 Tech Stack
 
 HTML5 → semantic structure
