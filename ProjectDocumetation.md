@@ -77,19 +77,9 @@ Vercel → hosting & deployment
 
 🔐 Authentication for users
 
-## ✨ Credits
+##### ✨ Credits
 Created by **Funmilayo Aina** during **PLP Power Learn Program – July 2025 Cohort**
 
-## 🌍 Deployment
-- Hosted on GitHub Pages / Netlify / Vercel  
-- Live URL: 👉 [your-link-here](https://)  
 
-## ✨ Credits
-Created by FhamaDeli team – 2025
-
-🌐 Deployment
-
-This project is deployed on Vercel.
-🔗 Live URL: https://farmer-platform.vercel.app
 
 
